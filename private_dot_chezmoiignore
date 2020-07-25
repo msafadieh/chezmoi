@@ -6,6 +6,7 @@
 .config/mpd
 .config/picom
 .config/user-dirs.dirs
+.config/zsh/.zprofile
 .local/bin
 .xinitrc
 {{ end }}
