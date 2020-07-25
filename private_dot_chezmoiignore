@@ -1,0 +1,15 @@
+{{ if eq .chezmoi.os "android" }}
+.config/VSCodium
+.config/alacritty
+.config/gtk-3.0
+.config/i3*
+.config/mpd
+.config/picom
+.config/user-dirs.dirs
+.local/bin
+.xinitrc
+{{ end }}
+
+{{ if neq .chezmoi.os "arch" }}
+.config/yay
+{{ end }}
