@@ -14,11 +14,8 @@
 .config/picom
 .config/procps
 .config/user-dirs.dirs
+.config/yay/config.json
 .config/zsh/.zprofile
 .local/bin
 .xinitrc
-{{- end }}
-
-{{- if and (eq .chezmoi.os "linux") (ne .chezmoi.osRelease.id "arch") }} 
-.config/yay/config.json
 {{- end }}
