@@ -19,6 +19,6 @@
 .xinitrc
 {{- end }}
 
-{{- if or (ne .chezmoi.os "linux") (.chezmoi.osRelease.id "arch") }} 
+{{- if and (eq .chezmoi.os "linux") (ne .chezmoi.osRelease.id "arch") }} 
 .config/yay/config.json
 {{- end }}
