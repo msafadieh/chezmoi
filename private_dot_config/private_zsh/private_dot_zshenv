@@ -1,0 +1,10 @@
+# ENV VARIABLES
+export EDITOR='vim'
+export SYSTEMD_EDITOR=$EDITOR
+export LC_ALL=en_US.UTF-8
+
+export WEECHAT_HOME=$HOME/.config/weechat
+
+# zsh CONFIG
+export HISTFILE=$HOME/.cache/zsh_history
+

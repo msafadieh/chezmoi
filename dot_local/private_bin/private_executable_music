@@ -1,0 +1,5 @@
+#! /bin/sh
+
+pidof mpd || mpd
+
+exec alacritty --class "music" -e ncmpcpp

@@ -1,0 +1,41 @@
+# prompt
+export PS1="
+%{[36m%}[%c] %(?:%{[1;32m%}$ :%{[1;31m%}$ )%{[m%}"
+
+# aliases
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias amend='git commit --amend --no-edit'
+
+# vi key bindings
+bindkey -v
+
+# enable tab-completions
+autoload -U compinit
+compinit
+
+# emacs style history search
+autoload -Uz history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+
+# edit command in editor
+autoload -Uz edit-command-line
+zle -N edit-command-line
+
+# bind keys in command mode
+bindkey -M vicmd '^[[A' history-beginning-search-backward-end \
+                 '^[OA' history-beginning-search-backward-end \
+                 '^[[B' history-beginning-search-forward-end \
+                 '^[OB' history-beginning-search-forward-end \
+				 v edit-command-line
+
+# bind keys in insert mode
+bindkey -M viins '^[[A' history-beginning-search-backward-end \
+                 '^[OA' history-beginning-search-backward-end \
+                 '^[[B' history-beginning-search-forward-end \
+                 '^[OB' history-beginning-search-forward-end
+
+# syntax highlighting & history plugins
+source $HOME/.local/lib/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $HOME/.local/lib/history.zsh

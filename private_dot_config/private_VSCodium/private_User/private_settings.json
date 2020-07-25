@@ -1,0 +1,33 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "workbench.iconTheme": "dobri-theme-icons",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 0,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 100,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "git.confirmSync": false,
+    "explorer.confirmDelete": false,
+    "editor.suggestSelection": "first",
+    "python.jediEnabled": true,
+    "update.mode": "none",
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "git.autofetch": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "python.pythonPath": "/bin/python",
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "terminal.integrated.rendererType": "dom",
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "diffEditor.ignoreTrimWhitespace": false
+}
