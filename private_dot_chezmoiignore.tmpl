@@ -1,17 +1,17 @@
 {{ if eq .chezmoi.os "android" }}
-.config/VSCodium
-.config/alacritty
-.config/gtk-3.0
-.config/i3*
-.config/mpd
-.config/picom
-.config/user-dirs.dirs
-.config/zsh/.zprofile
-.local/bin
-.xinitrc
+~/.config/VSCodium
+~/.config/alacritty
+~/.config/gtk-3.0
+~/.config/i3*
+~/.config/mpd
+~/.config/picom
+~/.config/user-dirs.dirs
+~/.config/zsh/.zprofile
+~/.local/bin
+~/.xinitrc
 {{ else if eq .chezmoi.os "linux" }} 
 {{ if ne .chezmoi.osRelease.id "arch" }}
-.config/yay
+~/.config/yay
 {{ end }}
 {{ end }}
 
