@@ -37,5 +37,5 @@ bindkey -M viins '^[[A' history-beginning-search-backward-end \
                  '^[OB' history-beginning-search-forward-end
 
 # syntax highlighting & history plugins
-source $HOME/.local/lib/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-source $HOME/.local/lib/history.zsh
+source $HOME/.local/lib/zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $HOME/.local/lib/zsh/history.zsh
