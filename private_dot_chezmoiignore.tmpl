@@ -1,4 +1,4 @@
-{{ "{{" }} if eq .chezmoi.os "android" {{ "}}" }}
+{{ if eq .chezmoi.os "android" }}
 .config/VSCodium
 .config/alacritty
 .config/gtk-3.0
@@ -9,8 +9,8 @@
 .config/zsh/.zprofile
 .local/bin
 .xinitrc
-{{ "{{" }} end {{ "}}" }}
+{{ end }}
 
-{{ "{{" }} if neq .chezmoi.os "arch" {{ "}}" }}
+{{ if ne .chezmoi.osRelease.id "arch" }}
 .config/yay
-{{ "{{" }} end {{ "}}" }}
+{{ end }}
