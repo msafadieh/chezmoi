@@ -20,5 +20,3 @@
 {{- else if or (ne .chezmoi.os "linux") (.chezmoi.osRelease.id "arch") }} 
 .config/yay/config.json
 {{- end }}
-{{- end }}
-
