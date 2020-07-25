@@ -1,17 +1,24 @@
 {{- if eq .chezmoi.os "android" }}
-.config/VSCodium/*
-.config/alacritty/*
-.config/gtk-3.0/*
-.config/i3*/*
-.config/mpd/*
-.config/picom/*
+.config/VSCodium/User/settings.json
+.config/alacritty/alacritty.yml
+.config/dunst/dunstrc
+.config/gnupg/gpg-agent.conf
+.config/gnupg/gpg.conf
+.config/gtk-3.0/settings.ini
+.config/i3/config
+.config/i3status/config
+.config/mpd/mpd.conf
+.config/ncmpcpp/config
+.config/newsboat/browserscript
+.config/newsboat/config
+.config/picom/picom.conf
+.config/procps/toprc
 .config/user-dirs.dirs
 .config/zsh/.zprofile
 .local/bin/*
 .xinitrc
-{{- else if eq .chezmoi.os "linux" }} 
-{{- if ne .chezmoi.osRelease.id "arch" }}
-.config/yay/*
+{{- else if or (ne .chezmoi.os "linux") (.chezmoi.osRelease.id "arch") }} 
+.config/yay/config.json
 {{- end }}
 {{- end }}
 
