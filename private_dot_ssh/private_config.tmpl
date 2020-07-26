@@ -1,1 +1,3 @@
+{{- if ne .chezmoi.os "android" }}
 {{ keepassxcAttribute "ssh" "config" }}
+{{- end }}

@@ -1,4 +1,4 @@
-{{- if eq .chezmoi.os "android" }}
+{{- if ne .chezmoi.os "linux" }}
 .config/VSCodium
 .config/VSCodium/User
 .config/alacritty
@@ -14,8 +14,10 @@
 .config/picom
 .config/procps
 .config/user-dirs.dirs
-.config/yay/config.json
+.config/yay
 .config/zsh/.zprofile
 .local/bin
 .xinitrc
+{{- else if eq .chezmoi.osRelease.id "arch" }}
+.config/yay
 {{- end }}
